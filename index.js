@@ -12,7 +12,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: "React",
       number: 0,
       change : (number) =>{
         this.setState({
@@ -32,8 +31,7 @@ class App extends Component {
     return (
       <NumberContext.Provider value={this.state}>
         <div>
-          <Hello name={this.state.name} />
-          <p>React context sample :)</p>
+          <h1>React context sample </h1>
           <button onClick={(evt) => this.increment()}>Increment From  parent Componet</button>
           <Child1 />
         </div>
